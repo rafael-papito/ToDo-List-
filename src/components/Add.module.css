@@ -1,0 +1,39 @@
+.formTask{
+    height: 3.3rem;
+    margin-top: -3.6rem;
+    display: flex;
+    justify-content: center;
+}
+.formTask input[type="text"]{
+    width: 39rem;
+    height: 3.3rem;
+    padding: 1rem;
+    margin-right:0.5rem;
+    background: var(--gray-500);
+    color: var(--gray-300);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.formTask button{
+    width: 6rem;
+    height: 3.3rem;
+    border: 0;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem ;
+    transition: 2;
+    cursor: pointer;
+    font-weight: 700;
+}
+.formTask button:hover{
+    background: var(--blue);
+}
+.formTask button span{
+    padding-left: 0.3rem;
+    padding-top: 0.1rem;
+}

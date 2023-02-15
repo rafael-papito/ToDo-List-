@@ -1,0 +1,38 @@
+.tasks{
+    padding:2rem 0;
+}
+.tasks > header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding: 2rem 0;
+}
+.created{
+    color: var(--blue);
+    font-weight: 700;
+   
+}
+.created span{
+    background: var(--gray-400);
+    color: var(--gray-200);
+    height: 0.8rem;
+    width: 0.6rem;
+    border-radius: 999px;
+    padding: 2px 8px 2px 8px;
+    margin-left: 0.5rem;
+
+}
+.completed{
+    color: var(--purple);
+    font-weight: 700;
+}
+.completed span{
+    background: var(--gray-400);
+    color: var(--gray-200);
+    height: 0.8rem;
+    width: 0.6rem;
+    border-radius: 999px;
+    padding: 2px 8px 2px 8px;
+    margin-left: 0.5rem;
+}
