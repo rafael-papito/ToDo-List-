@@ -1,3 +1,43 @@
+.formTask{
+    height: 3.3rem;
+    margin-top: -5.5rem;
+    display: flex;
+    justify-content: center;
+}
+.formTask input[type="text"]{
+    width: 39rem;
+    height: 3.3rem;
+    padding: 1rem;
+    margin-right:0.5rem;
+    background: var(--gray-500);
+    color: var(--gray-100);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.formTask button{
+    width: 6rem;
+    height: 3.3rem;
+    border: 0;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem ;
+    transition: 2;
+    cursor: pointer;
+    font-weight: 700;
+}
+.formTask button:hover{
+    background: var(--blue);
+}
+.formTask button span{
+    padding-left: 0.3rem;
+    padding-top: 0.1rem;
+}
+
 .tasks{
     padding:2rem 0;
 }
@@ -11,7 +51,6 @@
 .created{
     color: var(--blue);
     font-weight: 700;
-   
 }
 .created span{
     background: var(--gray-400);
@@ -21,7 +60,6 @@
     border-radius: 999px;
     padding: 2px 8px 2px 8px;
     margin-left: 0.5rem;
-
 }
 .completed{
     color: var(--purple);
@@ -35,4 +73,97 @@
     border-radius: 999px;
     padding: 2px 8px 2px 8px;
     margin-left: 0.5rem;
+}
+.format{
+    height: 4.5rem;
+    display: flex;
+    align-items: flex-start;
+    color: var(--gray-100);
+    background:var(--gray-500) ;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 0.75rem;
+}
+.format + .format{
+    margin-top: 0.75rem;
+}
+.format input[type="checkbox"]{
+   width: 0.5rem;
+   height: 0.5rem;
+   opacity: 0;
+}
+.container{
+    width: 3.5rem;
+    height: 4.5rem;
+    padding: 1rem 1rem;
+    float: left;
+}
+.check{
+    width:  1rem;
+    height: 1rem;
+    position: absolute;
+    border-radius: 100%;
+}
+.checkmark{
+    position: absolute;
+    height: 1.5rem;
+    top:-2px;
+    left: -5px;
+    width: 1.5rem;
+    background: transparent;
+    border-radius: 100%;
+    border: 3px solid var(--blue);
+    cursor: pointer;
+}
+.check:hover input ~ .checkmark{
+    background: var(--blue-dark);
+}
+.container input[type="checkbox"]:checked ~ .checkmark{
+    background: var(--purple-dark);
+    border: 3px solid var(--purple-dark);
+}
+.container .checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 0;
+    height: 10px;
+    width: 5px;
+    border: solid var(--gray-200);
+    border-width:  0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.container input:checked ~ .checkmark:after{
+    display: block;
+}
+.content{
+    width: 39rem;
+    padding: 1rem 0;
+    height: 100%;
+}
+.content p{
+    font-size: 0.875rem;
+}
+.delete{
+    width: 3rem;
+    height: 4.5rem;
+    padding: 1rem  1rem ;
+}
+button.deleteHover{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--gray-300);
+    cursor: pointer;
+    transition: 0.5s;
+    background: var(--gray-500);
+    border: 0;
+}
+.deleteHover:hover{
+    color: var(--danger);
+    background:var(--gray-400) ;
 }
